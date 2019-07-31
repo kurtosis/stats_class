@@ -31,16 +31,16 @@ get_sample_stats(2, 100)
 
 # Now let's do some numerical experimentation.
 # First let's run this command a few times with n_trials=10 (the first for loop)
-# When it prints the results look at the standard deviation (the middle number)
-# You should see it bounces around a bit
+# When it prints the results look at the sample mean (first number) and standard deviation (the middle number)
+# You should see they both bounce around a bit
 for (i in 1:4) {
   print(get_sample_stats(2, 10))
 }
 # Now try running a similar loop with n_trials = 1000 and 100000
-# The bigger n_trials gets, the less it bounces around.
+# The bigger n_trials gets, the less they bounces around.
 # This makes sense, if you have a ton of data you are pretty much capturing
 # the real sampling distribution.
-# In this case, it looks like std dev = 1/sqrt(18) = 0.2357023
+# In this case, it looks like mean = 0.667 and std dev = 1/sqrt(18) = 0.2357023
 # Maybe you can work out the math to prove why that's the answer.
 for (i in 1:4) {
   print(get_sample_stats(2, 1000))
