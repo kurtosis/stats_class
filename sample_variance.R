@@ -79,9 +79,11 @@ mean(samples$variance_right)
 # In other words "on average, what would we estimate the standard deviation to be,
 # if we use the formula sample_standard_devation = sqrt(sample_variance)?"
 # This is a more complicated topic - I wouldn't worry about trying to understand this right now.
-# BUT, just so you know, it turns out that even our "right" estimate doesn't give us the correct value on averge
+# BUT, just so you know, it turns out that even our "right" estimate doesn't give us the correct value on average
 # (The correct value is 1)
 # Still the right estimate is closer to 1 than the wrong estimate is.
+# (The reason that even our 'right' estimate isn't actually right has to do with the fact that we're taking a square root
+# but I'm not going to try to explain that right now...it's complicated!)
 samples = samples %>% mutate(
   std_dev_wrong = sqrt(variance_wrong),
   std_dev_right = sqrt(variance_right)
