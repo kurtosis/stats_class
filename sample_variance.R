@@ -53,8 +53,10 @@ samples = samples %>% mutate(
 # Take a look again!
 head(samples)
 
-# Now let's estimate the sample variance for each row
+# Now let's "estimate" the variance for each row
 # In other words, the variance of the two observations we have in each row
+# When I say "estimate" here what I mean is - "Given the data we have observed, what
+# is the best guess we can make for the value of the true population variance?"
 # First I computed the "wrong" estimate, where you divide by n (remember n=2)
 # Then I computed the "right" estimate where you divide by n-1
 samples = samples %>% mutate(
