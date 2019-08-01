@@ -37,7 +37,7 @@ for (i in 1:4) {
   print(get_sample_stats(2, 10))
 }
 # Now try running a similar loop with n_trials = 1000 and 100000
-# The bigger n_trials gets, the less they bounces around.
+# The bigger n_trials gets, the less they bounce around.
 # This makes sense, if you have a ton of data you are pretty much capturing
 # the real sampling distribution.
 # In this case, it looks like mean = 0.667 and std dev = 1/sqrt(18) = 0.2357023
