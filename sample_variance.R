@@ -68,8 +68,8 @@ samples = samples %>% mutate(
 # Now let's look at the average of our "estimated variance" over all the rows.
 # In other words, we just did 10,000 different trials 
 # For each trial, we drew n=2 observations and tried to estimate what the 
-# true variance is for the distribution we drew from
-# Remember this distribution is N(0,1) so we know its true variance (and std dev) is 1
+# true population variance is for the distribution we drew from
+# Remember this distribution is N(0,1) so we know its true population variance (and std dev) is 1
 # It turns out that if we use the wrong formula, then on average we would end up estimating that variance=0.5
 # BUT if we use the right formula then on average we would estimate that variance=1, which is correct!
 mean(samples$variance_wrong)
